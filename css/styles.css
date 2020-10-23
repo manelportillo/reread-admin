@@ -250,6 +250,11 @@ div.gallery:hover {
 
 
 /*Estilo del formulario*/
+.message {
+    border-radius: 2px;
+    background-color: #F0649D;
+    color:"black";
+}
 
 input,
 select,

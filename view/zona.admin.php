@@ -9,63 +9,48 @@
 <body>
 
 <?php
-require_once '../controller/sessionController.php';
+  require_once '../controller/sessionController.php';
 ?>
+  <table summary="Los grupos de música punk más famosos del Reino Unido">
+    <caption>Un resumen de los grupos de música punk más famosos del Reino Unido</caption>
+    <thead>
+      <tr>
+        <th scope="col">Grupo</th>
+        <th scope="col">Año de formación</th>
+        <th scope="col">Número de álbumes</th>
+        <th scope="col">Canción más conocida</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Buzzcocks</th>
+        <td>1976</td>
+        <td>9</td>
+        <td>Ever fallen in love (with someone you shouldn't've)</td>
+      </tr>
+      <tr>
+        <th scope="row">The Clash</th>
+        <td>1976</td>
+        <td>6</td>
+        <td>London Calling</td>
+      </tr>
+        
+        ... se han eliminado algunas filas por abreviar
 
-<div class="row">
-  <div class="column middle">
-    <div class="topnav">
-      <a class="active">Libros</a>
-    </div>
-    <div class="textpage">
-      <!--Ver todos los libros-->      
-      <?php
-      // require_once '../controller/librosController.php';
-      ?>
-    </div>
-  </div>
-  
-  <div class="column side">
-    <h2>Añadir libros</h2>
-    <div class="form">
-      <form action="ebooks.php" method="POST">
-        <label for="title">Título</label>
-        <input type="text" id="title" name="title" placeholder="Introduce el título...">
-        <label for="img">Imagen</label>
-        <input type="file" id="img" name="img" placeholder="Escoge una imagen...">
-        <label for="description">Descripción</label>
-        <textarea type="text" id="description" name="description" placeholder="Introduce la descripción..."></textarea>
-        <label for="author">Autor</label>
-        <select id="author" name="author">
-            <option value="%">---</option>
-            <?php
-            // Valores del campo select
-            // require_once '../controller/autoresController.php';
-            ?>
-        </select>
-        <label for="country">País</label>
-        <select id="country" name="country">
-            <option value="%">---</option>
-            <?php
-            // Valores del campo select
-            // require_once '../controller/paisesController.php';
-            ?>
-        </select>
-        <!--checkbox-->
-        <div class="two-column">
-          <label for="top">¿És top ventas?</label>
-          <input type="checkbox" id="top" name="top">
-        </div>
-        <div class="two-column">
-          <label for="ebook">¿Está en formato eBook?</label>
-          <input type="checkbox" id="ebook" name="ebook">
-        </div>
-        <!---->
-        <input type="submit" value="Insertar">
-      </form>
-    </div>
-  </div>
-</div>
+      <tr>
+        <th scope="row">The Stranglers</th>
+        <td>1974</td>
+        <td>17</td>
+        <td>No More Heroes</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="2">Número total de álbumes</th>
+        <td colspan="2">77</td>
+      </tr>
+    </tfoot>
+  </table>
   
 </body>
 </html>
